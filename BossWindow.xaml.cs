@@ -19,7 +19,7 @@ namespace WpfApp6
     /// </summary>
     public partial class BossWindow : Window
     {
-        public BossWindow()
+        public BossWindow(int WorkerId)
         {
             InitializeComponent();
         }

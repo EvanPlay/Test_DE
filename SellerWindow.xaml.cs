@@ -19,7 +19,7 @@ namespace WpfApp6
     /// </summary>
     public partial class SellerWindow : Window
     {
-        public SellerWindow()
+        public SellerWindow(int WorkerId)
         {
             InitializeComponent();
         }

@@ -24,6 +24,7 @@ namespace WpfApp6
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void btGo_Click(object sender, RoutedEventArgs e)
@@ -35,8 +36,8 @@ namespace WpfApp6
 
             if ( flockUser == true)
             {
-                int User = myContext.Users.Single(x => x.Login == tbLogin.Text && x.Password == pbPassword.Password).UserId;
-                UserWindow userWindow = new(User.UserId);
+                int UserId = myContext.Users.Single(x => x.Login == tbLogin.Text && x.Password == pbPassword.Password).UserId;
+                UserWindow userWindow = new(UserId);
                     userWindow.Show();
                 Close();
             }
