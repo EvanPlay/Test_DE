@@ -72,7 +72,7 @@ namespace WpfApp6
 
         private void btShowPass_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show(pbPassword.Password);
         }
     }
 }
