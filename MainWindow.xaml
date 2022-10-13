@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="150">
+            <Label Content="Логин"/>
+            <TextBox x:Name="tbLogin"/>
+            <Label Content="Пароль"/>
+            <PasswordBox x:Name="pbPassword"/>
+
+            <Button x:Name="btGo" Click="btGo_Click" Content="Войти" Margin="10"/>
+            <Button x:Name="btShowPass" Click="btShowPass_Click" Content="Показать пароль" Margin="10"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
