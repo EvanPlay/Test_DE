@@ -8,15 +8,26 @@
         Title="MainWindow" Height="400" Width="400"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="150">
-            <Label Content="Логин"/>
-            <TextBox x:Name="tbLogin"/>
-            <Label Content="Пароль"/>
-            <PasswordBox x:Name="pbPassword"/>
+        <StackPanel>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="150">
+                <Label Content="Логин"/>
+                <TextBox x:Name="tbLogin"/>
+                <Label Content="Пароль"/>
+                <PasswordBox x:Name="pbPassword"/>
 
-            <Button x:Name="btGo" Click="btGo_Click" Content="Войти" Margin="10"/>
-            <Button x:Name="btShowPass" Click="btShowPass_Click" Content="Показать пароль" Margin="10"/>
+                <Button x:Name="btGo" Click="btGo_Click" Content="Войти" Margin="10"/>
+                <Button x:Name="btShowPass" Click="btShowPass_Click" Content="Показать пароль" Margin="10"/>
 
+                <StackPanel x:Name="SpCapcha">
+
+                    <Image Margin="10" Name="imageCapcha" HorizontalAlignment="Left"/>
+                    <Label Content="Введите капчу"/>
+                    <TextBox x:Name="tbCapcha" Margin="5"/>
+                    <Button x:Name="btCapchaGo" Content="Ввести" Margin="10" Click="btCapchaGo_Click"/>
+                    <Button x:Name="btRecreateCapcha" Content="Повтор" Margin="10" Click="btRecreateCapcha_Click"/>
+
+                </StackPanel>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>

@@ -19,7 +19,7 @@ namespace WpfApp6
     /// </summary>
     public partial class AdministratorWindow : Window
     {
-        public AdministratorWindow()
+        public AdministratorWindow(int WorkerId)
         {
             InitializeComponent();
         }

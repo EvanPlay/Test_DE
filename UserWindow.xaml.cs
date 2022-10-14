@@ -19,7 +19,7 @@ namespace WpfApp6
     /// </summary>
     public partial class UserWindow : Window
     {
-        public UserWindow()
+        public UserWindow(int UserId)
         {
             InitializeComponent();
         }
